@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhuvanesh Yampala - Dusk of the Technomancer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+    .content {
+      z-index: 1;
+    }
+    .katana {
+      width: 120px;
+      animation: slash 4s infinite alternate ease-in-out;
+    }
+    @keyframes slash {
+      from { transform: rotate(-45deg) scale(1); }
+      to { transform: rotate(-45deg) scale(1.1); }
+    }
+  </style>
+</head>
+<body class="text-white text-center">
+
+  <!-- Background video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="https://cdn.pixabay.com/video/2023/07/11/175429-842870113_tiny.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Hero Section -->
+  <div class="flex flex-col justify-center items-center h-screen content p-4">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Katana_icon.svg" class="katana mb-6" alt="Katana" />
+    <h1 class="text-5xl font-bold mb-4">Bhuvanesh Yampala</h1>
+    <p class="text-xl italic mb-6">"Dusk falls. The Technomancer awakens."</p>
+    <a href="#enter" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition">Enter the Realm</a>
+  </div>
+
+  <!-- Entry Section -->
+  <div id="enter" class="min-h-screen bg-black bg-opacity-70 text-white p-10 text-left">
+    <h2 class="text-4xl font-bold text-red-400 mb-6">📜 Scroll of Origins</h2>
+    <p class="mb-4">In the twilight of code and circuits, <strong>Bhuvanesh Yampala</strong> emerged from Vijayawada as a master of Embedded Systems and IoT. Trained in the arts of KL University and TESSOLVE, he blends logic and legend, science and soul.</p>
+
+    <h3 class="text-2xl font-bold mt-8 text-red-300">🧪 Skills & Abilities</h3>
+    <ul class="list-disc ml-6 mt-2">
+      <li>Embedded Systems & IoT</li>
+      <li>C, C++, Java</li>
+      <li>Arduino & Robotics</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mt-8 text-red-300">🛠️ Projects</h3>
+    <ul class="list-disc ml-6 mt-2">
+      <li>Glasses for the Blind – Guidance through ultrasonic whispers</li>
+      <li>Warehouse Monitoring System – IoT and GSM for guardianship</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mt-8 text-red-300">🎓 Certifications</h3>
+    <ul class="list-disc ml-6 mt-2">
+      <li>Industrial Embedded Systems and IoT – TESSOLVE</li>
+      <li>MATLAB Onramp Certification – MathWorks</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mt-8 text-red-300">📮 Contact</h3>
+    <p>Email: <a class="text-blue-400" href="mailto:bhuvaneshyampla03@gmail.com">bhuvaneshyampla03@gmail.com</a></p>
+    <p>Phone: +91 9491225583</p>
+    <p>Location: Vijayawada, India</p>
+  </div>
+
+</body>
+</html>
